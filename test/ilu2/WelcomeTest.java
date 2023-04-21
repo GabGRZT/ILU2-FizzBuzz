@@ -7,8 +7,15 @@ import org.junit.jupiter.api.Test;
 class WelcomeTest {
 
 	@Test
-	void test() {
-		assertEquals(Welcome.welcome("bob"), "Hello Bob");
+	void test_ex_1() {
+		assertEquals("Hello, Bob",Welcome.welcome("bob"));
 	}
+	
+	@Test
+	void test_ex_2() {
+		assertEquals("Hello, my friend",Welcome.welcome(null));
+		assertEquals("Hello, my friend",Welcome.welcome(" "));
+	}
+	
 
 }
