@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 class WelcomeTest {
-
+	
 	@Test
 	void test_ex_1() {
 		assertEquals("Hello Bob",Welcome.welcome("bob"));
@@ -26,6 +26,10 @@ class WelcomeTest {
 	void test_ex_4() {
 		assertEquals("Hello, Amy, Bob", Welcome.welcome("amy,bob"));
 	}
-
+	
+	@Test
+	void test_ex_5() {
+		assertEquals("Hello, Amy, Bob, Jerry", Welcome.welcome("Amy, bob,jerry"));
+	}
 
 }
