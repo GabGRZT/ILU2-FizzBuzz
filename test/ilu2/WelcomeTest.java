@@ -66,5 +66,6 @@ class WelcomeTest {
 	void test_ex_8() {
 		assertEquals("Hello, Amy, Bob", Welcome.welcome("     amy,    bob  "));
 		assertEquals("Hello, Bob, Jerry and Amy. AND HELLO, JACK !", Welcome.welcome("bob, jerry  ,      amy     , JACK   "));
+		assertEquals("Hello, Bob and Gab. AND HELLO, JACK !", Welcome.welcome("  bob,  gab   ,  JACK   "));
 	}
 }
